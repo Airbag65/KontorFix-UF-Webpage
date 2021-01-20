@@ -1,0 +1,124 @@
+.footer-container,.footer-container2 {
+  margin-top: 10px;
+  height: inherit;
+  background: rgb(236, 236, 236);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.contacts-container {
+  grid-column: 1;
+  grid-row: 1;
+  padding: 2rem 3rem;
+}
+
+.footer-link-list {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+}
+
+.footer-list-item {
+  margin-bottom: 0.7rem;
+}
+
+.footer-link-head {
+  text-decoration: underline;
+  color: rgb(0, 0, 0);
+  opacity: 0.7;
+  cursor: default;
+}
+
+.footer-link-mail {
+  display: flex;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.footer-link-mail img {
+  height: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.footer-link-mail:hover {
+  animation: hovered-footer-links 0.5s ease forwards;
+}
+
+.footer-link-instagram {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  opacity: 0.7;
+}
+
+.footer-link-instagram img {
+  height: 1.7rem;
+  margin-right: 0.5rem;
+}
+
+.footer-link-instagram:hover {
+  animation: hovered-footer-links 0.5s ease forwards;
+}
+
+.footer-link-facebook {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  opacity: 0.7;
+}
+
+.footer-link-facebook img {
+  height: 1.7rem;
+  margin-right: 0.5rem;
+}
+
+.footer-link-facebook:hover {
+  animation: hovered-footer-links 0.5s ease forwards;
+}
+
+.footer-link-about {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  opacity: 0.7;
+}
+
+.footer-link-about img {
+  height: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.footer-link-about:hover {
+  animation: hovered-footer-links 0.5s ease forwards;
+}
+
+.footer-container2 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.footer-container2{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 5rem;
+}
+
+.footer-swish{
+  height: 4rem;
+}
+
+@keyframes hovered-footer-links {
+  from {
+    opacity: 0.7;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
