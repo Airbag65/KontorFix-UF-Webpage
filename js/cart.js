@@ -1,10 +1,7 @@
 const submitButton = document.querySelector(".order-form");
 submitButton.addEventListener("submit", submitForm);
 
-let confirmSubmition = false;
-
 function confirm(){
-    console.log("hello")
     document.querySelector(".confirm-order").style.opacity = "100";
     document.querySelector(".confirm-order").style.pointerEvents = "all";
 }
@@ -66,7 +63,7 @@ function submitForm(e){
 }
 
 function sendEmail(firstName, lastName, email, adress, appartmentNumber, postNumber, town, orderNumber, kabelFixIII, kabelFixV, totalCost){
-    Email.send({ //Till kund
+    Email.send({ //Email to customer
         Host: "smtp.gmail.com",
         Username: "info.kontorfix.uf@gmail.com",
         Password: "COMPANY SECRET :P",
@@ -87,7 +84,7 @@ function sendEmail(firstName, lastName, email, adress, appartmentNumber, postNum
         KontorFix UF
         `
     }).then((message) => console.log("Email has been sent!"));
-    Email.send({ //Till oss
+    Email.send({ //Email to our company
         Host: "smtp.gmail.com",
         Username: "info.kontorfix.uf@gmail.com",
         Password: "COMPANY SECRET :P",
