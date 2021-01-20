@@ -1,0 +1,156 @@
+section {
+  display: flex;
+  flex-direction: column;
+  margin:auto;
+  height: inherit;
+  width: 30%;
+  color:black;
+}
+
+.information-title{
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  color:rgb(22, 22, 22);
+}
+
+.information{
+  color:rgb(85, 85, 85);
+  font-size: 1rem;
+}
+
+.form-link{
+  color: rgb(58, 133, 198);
+}
+
+.form-link:hover{
+  color:rgb(63, 112, 155);
+}
+
+.order-form{
+  margin-top:4rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-header{
+  margin-left: 2rem;
+  font-size: 1.2rem;
+}
+
+.must-be-entered{
+  font-size: 1rem;
+  color:rgb(248, 72, 72);
+}
+
+.form-input-box{
+  background:rgb(236, 236, 236);
+  border:rgb(236, 236, 236) 1px solid;
+  font-size:1.1rem;
+  font-family:"Poppins", sans-serif;
+  padding: 0 1.5rem 0 1.5rem;
+  height:2rem;
+  width:100%;
+}
+
+.form-title{
+  font-size: 1.5rem;
+}
+
+.product{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding:1rem 4rem 1rem 1rem;
+  background: rgb(236, 236, 236);
+}
+
+.product-name{
+  font-size: 1.1rem;
+  padding: 0 5rem 0 2rem;
+}
+
+.amount-box{
+  font-size: 1rem;
+  height: 2rem;
+  background: rgb(215, 215, 215);
+  border: solid rgb(215, 215, 215) 1px;
+  border-radius: 10%;
+  padding-left: 1rem;
+}
+
+.form-checkbox{
+  height: 2rem;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.form-submit{
+  margin:auto;
+  height: 2.2rem;
+  width: 75%;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgb(58, 133, 198);
+  border-radius: 5px;
+  border: solid 2px rgb(58, 133, 198);
+  cursor: pointer;
+  margin-bottom: 4rem;
+}
+
+.to-pay{
+  text-align: center;
+  font-weight: 500;
+  color:rgb(117, 117, 117);
+}
+
+.confirm-order{
+  align-self: center;
+  background-color: rgb(97, 231, 97);
+  color:rgb(0, 0, 0);
+  font-size: 1rem;
+  height: 3rem;
+  width: 50%;
+  margin-bottom: 1rem;
+  border: solid 2px rgb(28, 155, 28);
+  border-radius: 5px;
+  cursor: default;
+
+  opacity: 0;
+  pointer-events: none;
+}
+
+.confirm-order:hover{
+  animation: confirm-button 0.3s ease forwards;
+  transform: translateY(1px);
+}
+
+.thank-you-message{
+  width: 100%;
+  font-size: 1.1rem;
+  margin: auto;
+  text-align: center;
+  color: rgb(56, 56, 56);
+  font-weight: bold;
+  padding-bottom: 3rem;
+
+  opacity: 0;
+}
+
+.check-mail{
+  font-size: .8rem;
+  color: rgb(56, 56, 56);
+  font-weight:500;
+}
+
+@keyframes confirm-button{
+  from {
+    background-color: rgb(97, 231, 97);
+  }
+  to {
+    background-color: rgb(85, 209, 85);
+  }
+}

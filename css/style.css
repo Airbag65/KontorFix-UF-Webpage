@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+  
+body{
+    background: white;
+    height: 100%;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+  
+button{
+    font-family: "Poppins", sans-serif;
+}
+  
+.margin {
+    height: 15vh;
+}
+
+.add-to-cart-button {
+    background: rgb(245, 245, 245);
+    border: solid 2px rgb(58, 133, 198);
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: rgb(58, 133, 198);
+    height: 2rem;
+    width: 10rem;
+    cursor: pointer;
+}
+
+.add-to-cart-button:hover{
+    transform: translateY(1px);
+    animation: hover-button 0.3s ease forwards;
+}
+
+.form-submit:hover{
+    animation: hover-button 0.3s ease forwards;
+    transform: translateY(1px);
+}
+
+@keyframes hover-button{
+    from{
+        border-color: rgb(58, 133, 198);
+        color: rgb(58, 133, 198);
+    }
+    to{
+        border-color: rgb(56, 125, 185);
+        color: rgb(56, 125, 185);
+        background: rgb(224, 224, 224);
+    }
+}
