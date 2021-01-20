@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <title>Startpage</title>
+  </head>
+  <body>
+
+    <!-- !NAV -->
+    <header>
+      <div class="navigation-box">
+        <nav class="nav-container">
+          <img
+            src="images/KontorFix Logga/KontorFixLogott.png"
+            class="logo-image"
+            onclick="toHomePage()"
+          />
+          <ul class="list">
+            <li class="list-item">
+              <a href="index.html" class="link">START</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="link dropdown-link">PRODUKTER &#9660;</a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="kabelfix3.html">Product 1</a></li>
+                  <li><a href="kabelfix5.html">Product 2</a></li>
+                  <!--<li><a href="#">Produkt 3</a></li>-->
+                </ul>
+              </div>
+            </li>
+            <li class="list-item"><a href="about.html" class="link">OM OSS</a></li>
+            <li class="list-item">
+              <a href="cart.html" class="link">BESTÄLLNING
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="margin"></div>
+
+    <!-- !MAIN SEKTIONEN -->
+    <main>
+      <section class="section">
+        <div class="grid-container">
+          <div class="grid-item1a">
+          </div>
+          <div class="grid-item2a">
+            <h2 class="product-name-a">
+              Product
+            </h2>
+          </div>
+          <div class="grid-item3a">
+            <p class="product-description-a">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam asperiores quis aut vero nemo minima, ducimus consequatur ex quaerat fuga praesentium laudantium error esse quisquam illum minus dignissimos, facere unde.
+            </p>
+            <a href="./kabelfix3.html" target="_self" class="read-more-a">
+              Läs mer!
+            </a>
+          </div>
+          <div class="grid-item4a">
+            <h2 class="price-tag-a">
+              $ 100
+            </h2>
+            <button class="add-to-cart-button add-button-a" onclick="location.href='cart.html'">
+              buy
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="grid-container">
+          <div class="grid-item1b">
+          </div>
+          <div class="grid-item2b">
+            <h2 class="product-name-b">
+              Product
+            </h2>
+          </div>
+          <div class="grid-item3b">
+            <p class="product-description-b">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, molestiae cumque mollitia sequi saepe ratione repellat facere cum numquam voluptatem magnam quia nemo nostrum nobis qui tempore maiores illum quis!
+            </p>
+            <a href="./kabelfix5.html" target="_self" class="read-more-b">
+              Läs mer!
+            </a>
+          </div>
+          <div class="grid-item4b">
+            <h2 class="price-tag-b">
+              $ 150
+            </h2>
+            <button class="add-to-cart-button add-button-b" onclick="location.href='cart.html'">
+              buy
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <!-- !FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <div class="contacts-container">
+          <ul class="footer-link-list">
+            <li class="footer-list-item">
+              <p class="footer-link-head">
+                Mer information:
+              </p>
+            </li>
+            <li class="footer-list-item">
+              <div class="footer-link-mail">
+                <img src="images/mail-logo.png" alt="mail logo" />
+                <p class="mailLink" onclick="copyAdress()" style="user-select: all">info.kontorfix.uf@gmail.com</p>
+              </div>
+            </li>
+            <li class="footer-list-item">
+              <a
+                href="https://www.instagram.com/kontorfix.uf/"
+                target="_blank"
+                class="footer-link-instagram"
+              >
+                <img src="images/instagram-logo.png" alt="instagram logo" />
+                kontorfix.uf
+              </a>
+            </li>
+            <li class="footer-list-item">
+              <a href="https://www.facebook.com/KontorFix-UF-105372398044477" target="_blank" class="footer-link-facebook">
+                <img src="images/facebook-logo.png" alt="facebook logo" />
+                Facebook
+              </a>
+            </li>
+            <li class="footer-list-item">
+              <a href="about.html" class="footer-link-about">
+                <img src="images/om-oss-bild.png" alt="om oss" />
+                Om Oss
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-container2">
+          <img src="images/swishbanner.png" alt="swish" class="footer-swish">
+        </div>
+      </div>
+    </footer>
+    <script src="js/footer.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
